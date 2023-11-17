@@ -10,7 +10,8 @@ const randomCoord = (dimension) => {
 function createDiv(color) {
     const randomNum = Math.random();
 
-    const divSize = randomNum < 0.9 ? 75 : 100;
+    // const divSize = randomNum < 0.9 ? 75 : 100;
+    const divSize = 100;
     const newDiv = document.createElement("div");
     const aniDur = (Math.random() * 10) + 5;
 

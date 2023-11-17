@@ -1,0 +1,18 @@
+---
+title: parker's links
+layout: layouts/base.njk
+---
+<h1>Hello, please enjoy my links</h1>
+<p>💾 Recent posts from <a href="https://parkerdavis.dev">parkerdavis.dev</a>:</p>
+{% for item in parkerdavis.items | head(3) %}
+    <ul>
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+    </ul>
+{% endfor %}
+<p>🪿 Recent posts from <a href="https://birdsmakesound.com">birdsmakesound.com</a>:</p>
+{% for item in birdsmakesound.items | head(3) %}
+    <ul>
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+    </ul>
+{% endfor %}
+<p>🎶 <a href="https://ohparkpiano.bandcamp.com">Music</a></p>

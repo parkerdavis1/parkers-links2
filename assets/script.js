@@ -61,7 +61,7 @@ const randomId = setInterval(()=> {
   const randomHue = Math.round(Math.random()*360);
   createDiv(`hsl(${randomHue} 100% 50% / 0.75)`);
   // console.log('randomColor div added');
-}, 1000);
+}, 2000);
 
 // setTimeout(()=> {
 //   console.log('STOP ADDING NOW!')

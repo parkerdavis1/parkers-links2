@@ -4,7 +4,7 @@
 }
 
 .turkey {
-    background-image: url('/assets/turkey.png');
+    background-image: url('/assets/turkey/turkey.png');
     height: var(--turkey-width);
     width: var(--turkey-width);
     background-position: bottom;

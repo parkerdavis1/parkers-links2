@@ -6,13 +6,16 @@ layout: layouts/base.njk
 <p>💾 Recent posts from <a href="https://parkerdavis.dev">parkerdavis.dev</a>:</p>
 {% for item in parkerdavis.items | head(3) %}
     <ul>
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        <li><p><a href="{{ item.url }}">{{ item.title }}</a></p>
+        {# <p>({{item.date_published | readableDate('LLL dd yyyy')}})</p></li> #}
     </ul>
 {% endfor %}
 <p>🪿 Recent posts from <a href="https://birdsmakesound.com">birdsmakesound.com</a>:</p>
 {% for item in birdsmakesound.items | head(3) %}
     <ul>
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        <li><a href="{{ item.url }}">{{ item.title }}</a>
+         {# ({{item.date_published | readableDate('LLL dd yyyy')}}) #}
+         </li>
     </ul>
 {% endfor %}
 <p>🎶 <a href="https://ohparkpiano.bandcamp.com">Music</a></p>

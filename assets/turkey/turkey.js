@@ -20,8 +20,6 @@ window.addEventListener('resize', adjustTurkeyAnimation);
 
 
 // Audio
-console.log('Starting audio stuff');
-
 const gobble = new Sprite({
     src: "assets/turkey/turkey-sprite.m4a",
     sprite: {

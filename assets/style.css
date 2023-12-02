@@ -22,17 +22,17 @@ img {
 }
 
 /* ----- HOLIDAY STYLES ----- */
-/* 
-    body {
-        background: #111;
-        color: white;
-    }
-    a {
-        color: rgb(189, 190, 255);
-    }
-    img {
-        opacity: 0.8;
-    }  */
+
+body {
+    background: #111;
+    color: white;
+}
+a {
+    color: rgb(189, 190, 255);
+}
+img {
+    opacity: 0.8;
+}
 
 .background-div {
     position: fixed;
@@ -62,3 +62,14 @@ img {
         opacity: 0;
     }
 }
+
+/* revamped minimal styles */
+
+/* .background-div {
+    max-width: 400px;
+    width: 100%;
+    line-height: 0;
+}
+.cell {
+    display: inline-block;
+} */

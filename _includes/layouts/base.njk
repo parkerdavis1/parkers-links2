@@ -3,37 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{title}}</title>
+        <title>{{ title }}</title>
         <link rel="shortcut icon" href="assets/facedraw.png" type="image/x-icon">
-        {# <link rel="stylesheet" href="assets/style.css"> #}
-        {# <script src="assets/script.js" defer></script> #}
-        {% include "assets/turkey/turkey.html" %}
-        <style>
-            :root {
-                color-scheme: light dark;
-
-            }
-            @media (prefers-color-scheme: dark) {
-                a, a:visited {
-                    color: #8c8cff;
-                }
-                a:visited {
-                    color: #ffadff;
-                }
-            }
-            .background-div {
-                max-width: 400px;
-                width: 100%;
-                line-height: 0;
-            }
-            .cell {
-                display: inline-block;
-            }
-        </style>
+        <script src="assets/bokeh.js" defer></script>
+        {# {% include "assets/turkey/turkey.html" %} #}
         <!-- plausible analytics -->
         <script defer data-domain="links.parkerdavis.dev" src="https://plausible.parkerdavis.dev/js/script.js"></script>
-    </head>
-    <body>
-        {{ content | safe }}
-    </body>
-</html>
+        <style>:root
+        {
+            color-scheme: light dark;
+        }
+        @media(prefers-color-scheme: dark) {
+            a,
+            a:visited {
+                color: #8c8cff;
+            }
+            a:visited {
+                color: #ffadff;
+            }
+        }
+        {% include "assets/style.css" %}
+    </style>
+</head>
+<body>
+    {{ content | safe }}
+</body></html>

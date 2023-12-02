@@ -1,7 +1,10 @@
 const { DateTime } = require("luxon");
+const pluginLightningCss = require('@11tyrocks/eleventy-plugin-lightningcss');
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('assets');
+
+    eleventyConfig.addPlugin(pluginLightningCss);
 
     eleventyConfig.addFilter('head', (array, n) => {
         if (!Array.isArray(array) || array.length === 0) {

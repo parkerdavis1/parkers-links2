@@ -31,7 +31,6 @@ const gobble = new Sprite({
 
 window.addEventListener('load', () => {
     const turkey = document.querySelector('.turkey');
-    console.log('turkeyEl', turkey)
     turkey.addEventListener('click', () => {
         const sprites = ['a', 'b', 'c'];
         const randomSprite = sprites[Math.floor(Math.random() * sprites.length)] 

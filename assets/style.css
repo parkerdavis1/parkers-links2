@@ -1,5 +1,6 @@
 body {
     width: fit-content;
+    max-width: 25rem;
     margin: auto;
     height: 100%;
     padding: 0;
@@ -8,6 +9,10 @@ body {
 
 img {
     max-width: min(50%, 20rem);
+}
+
+h1 {
+    text-align: center;
 }
 
 @media screen and (prefers-color-scheme: dark) {

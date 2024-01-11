@@ -12,21 +12,24 @@ layout: layouts/base.njk
             <p>
                 <a href="{{ item.url }}">{{ item.title }}</a>
             </p>
-            {# <p>({{item.date_published | readableDate('LLL dd yyyy')}})</p></li> #}
-        </ul>
-    {% endfor %}
-    <p>🪿 Recent posts from
-        <a href="https://birdsmakesound.com">birdsmakesound.com</a>:</p>
-    {% for item in birdsmakesound.items | head(3) %}
-        <ul>
-            <li>
-                <a href="{{ item.url }}">{{ item.title }}</a>
-                {# ({{item.date_published | readableDate('LLL dd yyyy')}}) #}
-            </li>
-        </ul>
-    {% endfor %}
-    <p>🎶
-        <a href="https://ohparkpiano.bandcamp.com">Music</a>
-    </p>
-    {# <p>🎄 <a href="https://ohparkpiano.bandcamp.com/album/christmas-2012">Christmas Album</a></p> #}
-    {# <script defer src="assets/ornament.js"></script> #}
+        </li>
+        {# <p>({{item.date_published | readableDate('LLL dd yyyy')}})</p></li> #}
+    </ul>
+{% endfor %}
+<p>🪿 Recent posts from
+    <a href="https://birdsmakesound.com">birdsmakesound.com</a>:</p>
+{% for item in birdsmakesound.items | head(3) %}
+    <ul>
+        <li>
+            <a href="{{ item.url }}">{{ item.title }}</a>
+            {# ({{item.date_published | readableDate('LLL dd yyyy')}}) #}
+        </li>
+    </ul>
+{% endfor %}
+<p>🎶
+    <a href="https://ohparkpiano.bandcamp.com">Music</a>
+</p>
+{# <button class="dolphin">
+    {% include "assets/dolphin/dolphinIcon.svg" %}
+</button>
+<script>{% include "assets/dolphin/dolphin.js" %}</script> #}

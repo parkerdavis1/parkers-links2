@@ -10,7 +10,7 @@ layout: layouts/base.njk
     <ul>
         <li>
             <p>
-                <a href="{{ item.url }}">{{ item.title }}</a>
+                <a href="{{ item.url }}">{{ item.title | safe }}</a>
             </p>
         </li>
         {# <p>({{item.date_published | readableDate('LLL dd yyyy')}})</p></li> #}
@@ -21,7 +21,7 @@ layout: layouts/base.njk
 {% for item in birdsmakesound.items | head(3) %}
     <ul>
         <li>
-            <a href="{{ item.url }}">{{ item.title }}</a>
+            <a href="{{ item.url }}">{{ item.title | safe }}</a>
             {# ({{item.date_published | readableDate('LLL dd yyyy')}}) #}
         </li>
     </ul>

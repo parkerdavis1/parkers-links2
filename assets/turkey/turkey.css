@@ -9,7 +9,7 @@
     width: var(--turkey-width);
     background-position: bottom;
     background-repeat: no-repeat;
-    position:fixed;
+    position: fixed;
     bottom: 0;
     left: calc(-1 * var(--turkey-width));
     animation-name: trot;

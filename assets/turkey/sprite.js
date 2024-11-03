@@ -27,8 +27,8 @@ export default class Sprite {
     }
 
     play(sampleName) {
-        console.log(sampleName);
-        console.log(this.samples);
+        // console.log(sampleName);
+        // console.log(this.samples);
         const startTime = this.samples[sampleName][0] / 1000;
         const duration = this.samples[sampleName][1] / 1000;
         const sampleSource = this.ctx.createBufferSource();

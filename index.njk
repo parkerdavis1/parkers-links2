@@ -4,6 +4,7 @@ layout: layouts/base.njk
 ---
 
 <h1>~ ~ ~ Links ~ ~ ~</h1>
+{% include "assets/christmas-album/album.html" %}
 <p>💾 Recent posts from
     <a href="https://parkerdavis.dev">parkerdavis.dev</a>:</p>
 {% for item in parkerdavis.items | head(5) %}
@@ -33,5 +34,6 @@ layout: layouts/base.njk
     {% include "assets/dolphin/dolphinIcon.svg" %}
 </button>
 <script>{% include "assets/dolphin/dolphin.js" %}</script> #}
-{% include "assets/turkey/turkey.html" %}
-{# {% include "assets/snow/snow.html" %} #}
+{# {% include "assets/turkey/turkey.html" %} #}
+{% include "assets/snow/snow.html" %}
+{% include "assets/bokeh/bokeh.html" %}

@@ -7,10 +7,10 @@
     color-scheme: light dark;
 
     /* holiday style to make snow POP */
-    --background: #043a02;
+    /* --background: #043a02;
     --color: white;
     --link: hsl(240, 100%, 87%);
-    --link-visited: hsl(270, 100%, 80%);
+    --link-visited: hsl(270, 100%, 80%); */
 }
 
 body {

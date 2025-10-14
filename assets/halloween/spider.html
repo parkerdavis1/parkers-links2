@@ -5,9 +5,42 @@
         left: 0;
         z-index: -100;
     }
+
+    #jackolantern {
+        cursor: pointer;
+    }
+
+    .jack-container {
+        display: flex;
+        justify-content: end;
+    }
 </style>
 
 <img src="/assets/halloween/spider.gif" alt="Spider Animation" id="spider" />
-<audio controls autoplay>
+<div class="jack-container">
+    <img
+        src="/assets/halloween/jackolantern_small.png"
+        alt="Jack-o'-lantern play button"
+        id="jackolantern"
+    />
+</div>
+<audio id="monster-mash">
     <source src="/assets/halloween/monster_mash2.mp3" type="audio/mp3" />
 </audio>
+
+<script>
+    const jack = document.querySelector('#jackolantern');
+    const audio = document.querySelector('#monster-mash');
+
+    let isPlaying = !audio.paused;
+
+    jack.addEventListener('click', () => {
+        if (isPlaying) {
+            audio.pause();
+            isPlaying = false;
+        } else {
+            audio.play();
+            isPlaying = true;
+        }
+    });
+</script>

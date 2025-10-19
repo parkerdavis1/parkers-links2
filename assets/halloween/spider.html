@@ -14,15 +14,30 @@
         display: flex;
         justify-content: end;
     }
+
+    .jack-button {
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        width: fit-content;
+        /* width: 100px; */
+    }
+
+    .jack-button img {
+        max-width: none;
+    }
 </style>
 
 <img src="/assets/halloween/spider.gif" alt="Spider Animation" id="spider" />
 <div class="jack-container">
-    <img
-        src="/assets/halloween/jackolantern_small.png"
-        alt="Jack-o'-lantern play button"
-        id="jackolantern"
-    />
+    <button class="jack-button" id="jackolantern">
+        <img
+            src="/assets/halloween/jackolantern_small.png"
+            alt="Jack-o'-lantern play button"
+            width="200"
+            height="200"
+        />
+    </button>
 </div>
 <audio id="monster-mash">
     <source src="/assets/halloween/monster_mash2.mp3" type="audio/mp3" />

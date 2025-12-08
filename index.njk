@@ -4,7 +4,7 @@ layout: layouts/base.njk
 ---
 
 <h1>~ ~ ~ Links ~ ~ ~</h1>
-{# {% include "assets/christmas-album/album.html" %} #}
+{% include "assets/christmas-album/album.html" %}
 <p>💾 Recent posts from
     <a href="https://parkerdavis.dev">parkerdavis.dev</a>:</p>
 {% for item in parkerdavis.items | head(5) %}

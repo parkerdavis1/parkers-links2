@@ -102,3 +102,11 @@ a:visited {
     --link: hsl(240, 100%, 50%);
     --link-visited: hsl(270, 100%, 50%);
 }
+
+.top-links {
+    list-style: none;
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+}

@@ -3,12 +3,12 @@ title: parker's links
 layout: layouts/base.njk
 ---
 
-<h1>~ ~ ~ Links ~ ~ ~</h1>
+<h1>hyperlinks</h1>
 {# {% include "assets/christmas-album/album.html" %} #}
 <ul class="top-links">
     <li>
         <a href="https://parkerdavis.dev">
-            {% include 'assets/icons/agave.svg' %}
+            {% include 'assets/icons/smile-sun.svg' %}
             <span>Personal Site</span>
         </a>
     </li>
@@ -34,16 +34,15 @@ layout: layouts/base.njk
 </ul>
 <p>Recent posts from
     <a href="https://parkerdavis.dev">parkerdavis.dev</a>:</p>
-{% for item in parkerdavis.items | head(5) %}
     <ul>
-        <li>
-            <p>
+        {% for item in parkerdavis.items | head(5) %}
+            <li>
                 <a href="{{ item.url }}">{{ item.title | safe }}</a>
-            </p>
-        </li>
-        {# <p>({{item.date_published | readableDate('LLL dd yyyy')}})</p></li> #}
+            </li>
+        {% endfor %}
     </ul>
-{% endfor %}
+
+
 <!--<p>🪿 Recent posts from
     <a href="https://birdsmakesound.com">birdsmakesound.com</a>:</p>
 {% for item in birdsmakesound.items | head(3) %}
@@ -54,15 +53,14 @@ layout: layouts/base.njk
         </li>
     </ul>
 {% endfor %}-->
+
+
 <!--<p>🎶
     <a href="https://ohparkpiano.bandcamp.com">Music</a>
 </p>-->
-{# {% include "assets/halloween/spider.html" %} #}
 
-{# <button class="dolphin">
-    {% include "assets/dolphin/dolphinIcon.svg" %}
-</button>
-<script>{% include "assets/dolphin/dolphin.js" %}</script> #}
+
+{# {% include "assets/halloween/spider.html" %} #}
 {# {% include "assets/turkey/turkey.html" %} #}
 {# {% include "assets/snow/snow2.html" %} #}
 {# {% include "assets/bokeh/bokeh.html" %} #}

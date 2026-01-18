@@ -9,6 +9,7 @@
     --background: #eee;
     --color: #111;
     --link: hsl(240, 100%, 50%);
+    --link: oklch(0.4644 0.1 222);
     --link-visited: hsl(270, 100%, 50%);
 
     --font-sans:
@@ -59,9 +60,9 @@ a {
     color: var(--link);
 }
 
-a:visited {
+/*a:visited {
     color: var(--link-visited);
-}
+}*/
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
@@ -104,9 +105,22 @@ a:visited {
 }
 
 .top-links {
-    list-style: none;
-    svg {
-        width: 16px;
-        height: 16px;
+    li {
+        list-style: none;
     }
+    svg {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+ul {
+    line-height: 1.5;
+}
+
+li {
+    list-style-type: circle;
+    /*&:hover {
+        list-style-type: disc;
+    }*/
 }

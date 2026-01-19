@@ -31,6 +31,7 @@
     --color: white;
     --link: hsl(30, 98.1%, 59.2%);
     --link-visited: hsl(270, 100%, 80%);*/
+    font-size: 20px;
 }
 
 body {
@@ -41,7 +42,6 @@ body {
     padding: 0 1rem;
     /*font-family: var(--font-sans);*/
     font-family: var(--font-serif);
-    font-size: 20px;
     background: var(--background);
     color: var(--color);
     transition-property: color, background;
@@ -52,9 +52,10 @@ img {
     max-width: min(50%, 20rem);
 }
 
-/*h1 {
-    text-align: center;
-}*/
+h1 {
+    /*text-align: center;*/
+    font-size: 1.25rem;
+}
 
 a {
     color: var(--link);
@@ -105,12 +106,21 @@ a {
 }
 
 .top-links {
+    padding-left: 0;
+
     li {
         list-style: none;
     }
+
     svg {
         width: 1rem;
         height: 1rem;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
     }
 }
 

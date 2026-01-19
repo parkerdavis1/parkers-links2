@@ -52,9 +52,9 @@ img {
     max-width: min(50%, 20rem);
 }
 
-h1 {
+/*h1 {
     text-align: center;
-}
+}*/
 
 a {
     color: var(--link);
